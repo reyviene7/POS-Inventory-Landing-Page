@@ -5,54 +5,61 @@ import { ShieldHalf } from "lucide-react";
 import { ReceiptText } from "lucide-react";
 import { UsersRound } from "lucide-react";
 
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+import user1 from "../assets/profile-pictures/user1.png";
+import user2 from "../assets/profile-pictures/user2.png";
+import user3 from "../assets/profile-pictures/user3.png";
+import user4 from "../assets/profile-pictures/user4.png";
+import user5 from "../assets/profile-pictures/user5.png";
+import user6 from "../assets/profile-pictures/user6.png";
 
 export const navItems = [
   { label: "Features", href: "#Features" },
-  { label: "About", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "About", href: "#About" },
+  { label: "Testimonials", href: "#Testimonial" },
 ];
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
+    user: "Ana Lopez",
+    company: "Lopez Sari-Sari Store - Cagayan de Oro",
     image: user1,
-    text: "The POS Wizard transformed our business operations. Their POS system is fast, reliable, and incredibly user-friendly.",
+    rating: 5,
+    text: "Simula nang gamitin namin ang The POS Wizard, mas napadali ang pag-monitor ng paninda at benta. Wala nang manual computation! Malaking tulong lalo na sa tindahan naming maraming produkto.",
   },
   {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
+    user: "Mark Dela Cruz",
+    company: "Dela Cruz Hardware - Iligan City",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    rating: 4,
+    text: "Maganda ang features ng POS Wizard. May kaunting learning curve nung una, pero mabilis lang nasanay ang staff. Real-time stock updates ang pinaka-favorite naming feature.",
   },
   {
-    user: "David Johnson",
-    company: "Quantum Innovations",
+    user: "Jenelyn Rivera",
+    company: "Rivera Sari-Sari - Ozamiz City",
     image: user3,
-    text: "We couldn't be happier with the POS system provided by The POS Wizard. Their team took the time to understand our needs and delivered a seamless, efficient solution that streamlined our sales and inventory.",
+    rating: 5,
+    text: "Super user-friendly ng interface, pati yung receipt printing napaka-professional. Customers even complimented the receipts. Highly recommended lalo na sa mga nagsisimula pa lang.",
   },
   {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
+    user: "Carlos Mendoza",
+    company: "Mendoza Sari-Sari Store - Pagadian",
     image: user4,
-    text: "Their system helped us automate key processes, improve accuracy, and enhance customer service. Highly recommended for any business looking for a top-notch POS solution!"  },
-  {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "The POS Wizard team went above and beyond to customize a solution that perfectly fit our retail operations.",
+    rating: 5,
+    text: "Noon ang hirap mag-track ng stocks, pero ngayon automated na lahat. Kahit maraming branches, centrally controlled. Salamat POS Wizard sa hassle-free POS system.",
   },
   {
-    user: "Emily Davis",
-    company: "Synergy Systems",
+    user: "Luisa Santos",
+    company: "Santos Mini Mart - Iligan City",
+    image: user5,
+    rating: 4,
+    text: "Gusto ko yung barcode scanning at multi-payment feature. Kung may concern, mabilis mag-response ang support nila. Para sa presyo at serbisyo, sulit na sulit!",
+  },
+  {
+    user: "Jerome Alcantara",
+    company: "Alcantara Auto Supply - Maranding, Lanao del Norte",
     image: user6,
-    text: "I am amazed by the level of professionalism and dedication shown by The POS Wizard team. They delivered a POS system that exceeded our expectations and helped us improve our business operations significantly.",
+    rating: 5,
+    text: "Napaka-gaan gamitin ng POS Wizard kahit sa mga hindi techie. Mabilis ang transaction at accurate ang inventory reports. Recommended ko talaga sa kapwa MSMEs.",
   },
 ];
 
@@ -130,12 +137,12 @@ export const resourcesLinks = [
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
+  { href: "#Features", text: "Features" },
   { href: "#", text: "FAQ" },
   { href: "#", text: "System Requirements" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "About us" },
+  { href: "#About", text: "About" },
   { href: "https://www.facebook.com/ThePosWizard", text: "Contact" },
 ];
