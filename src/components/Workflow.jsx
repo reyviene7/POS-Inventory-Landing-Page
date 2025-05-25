@@ -4,26 +4,34 @@ import { checklistItems } from "../constants";
 
 const Workflow = () => {
   return (
-    <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
+    <div id="About" className="mt-16 px-4 sm:px-8">
+      <h2 className="text-2xl sm:text-4xl lg:text-6xl text-center mt-6 tracking-wide leading-tight">
         Accelerate your{" "}
         <span className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">
           Business Operation.
         </span>
       </h2>
-      <div className="flex flex-wrap justify-center">
-        <div className="p-6 w-full lg:w-1/2">
-          <img src={codeImg} alt="Coding" />
+
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 mt-10">
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2">
+          <img src={codeImg} alt="Coding" className="w-full h-auto" />
         </div>
-        <div className="pt-12 w-full lg:w-1/2">
+
+        {/* Checklist Section */}
+        <div className="w-full lg:w-1/2 space-y-10">
           {checklistItems.map((item, index) => (
-            <div key={index} className="flex mb-12">
-              <div className="text-green-400 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
+            <div key={index} className="flex items-start space-x-4">
+              <div className="flex-shrink-0 text-green-400 bg-neutral-900 h-10 w-10 p-2 flex justify-center items-center rounded-full">
                 <CheckCircle2 />
               </div>
               <div>
-                <h5 className="mt-1 mb-2 text-xl">{item.title}</h5>
-                <p className="text-md text-neutral-500">{item.description}</p>
+                <h5 className="text-lg sm:text-xl font-medium mb-1">
+                  {item.title}
+                </h5>
+                <p className="text-sm sm:text-base text-neutral-500">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}
